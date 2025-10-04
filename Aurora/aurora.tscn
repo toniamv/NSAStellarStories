@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://cbjuwshfhltm7"]
+
+[ext_resource type="Texture2D" uid="uid://c4yh2isf7y03a" path="res://Aurora/Aurora_Spritesheet.png" id="1_468m4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlt73"]
+atlas = ExtResource("1_468m4")
+region = Rect2(1, 7, 190, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0otm"]
+atlas = ExtResource("1_468m4")
+region = Rect2(1, 38, 190, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwmcg"]
+atlas = ExtResource("1_468m4")
+region = Rect2(1, 100, 190, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lifb0"]
+atlas = ExtResource("1_468m4")
+region = Rect2(1, 69, 190, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_65o5p"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlt73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0otm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwmcg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lifb0")
+}],
+"loop": true,
+"name": &"hair",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_468m4"]
+size = Vector2(53.5, 60)
+
+[node name="Aurora" type="Node2D"]
+
+[node name="AuroraBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, 2)
+
+[node name="AnimatedAurora2D" type="AnimatedSprite2D" parent="AuroraBody2D"]
+texture_filter = 1
+position = Vector2(479.125, 54.669273)
+scale = Vector2(2.598684, 3.182628)
+sprite_frames = SubResource("SpriteFrames_65o5p")
+animation = &"hair"
+frame_progress = 0.8833227
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AuroraBody2D"]
+position = Vector2(271.25, 61)
+shape = SubResource("RectangleShape2D_468m4")

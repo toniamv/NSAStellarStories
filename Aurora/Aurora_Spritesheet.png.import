@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1s3qvjb3lrhg"
-path="res://.godot/imported/Andy_CameraSnap_Spritesheet.png-b715f8dd7cdf603ee9e28c4cbfc7250b.ctex"
+uid="uid://c4yh2isf7y03a"
+path="res://.godot/imported/Aurora_Spritesheet.png-c06adcf6fa6dcedb7ac0a36802f28cc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Andy_CameraSnap_Spritesheet.png"
-dest_files=["res://.godot/imported/Andy_CameraSnap_Spritesheet.png-b715f8dd7cdf603ee9e28c4cbfc7250b.ctex"]
+source_file="res://Aurora/Aurora_Spritesheet.png"
+dest_files=["res://.godot/imported/Aurora_Spritesheet.png-c06adcf6fa6dcedb7ac0a36802f28cc3.ctex"]
 
 [params]
 
