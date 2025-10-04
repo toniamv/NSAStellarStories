@@ -1,9 +1,25 @@
-[gd_scene format=3 uid="uid://cyejr5av23j3d"]
+[gd_scene load_steps=4 format=3 uid="uid://cyejr5av23j3d"]
+
+[ext_resource type="Script" uid="uid://vh062f33tm6x" path="res://andy_body_2d.gd" id="1_iv1f8"]
+[ext_resource type="Texture2D" uid="uid://bycajmagt8gos" path="res://Assets/Andy_Camera_Spritesheet.png" id="2_iv1f8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iv1f8"]
+size = Vector2(16, 22)
 
 [node name="Andy" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="AndyBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_iv1f8")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="AndyBody2D"]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(-6, -7)
+texture = ExtResource("2_iv1f8")
+centered = false
+offset = Vector2(0, -6)
+hframes = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AndyBody2D"]
+position = Vector2(8, 5)
+shape = SubResource("RectangleShape2D_iv1f8")

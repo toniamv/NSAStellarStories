@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://gnae0rjsvhi7"]
+
+[ext_resource type="PackedScene" uid="uid://cyejr5av23j3d" path="res://andy.tscn" id="1_ld72f"]
+[ext_resource type="PackedScene" uid="uid://hmy1ers8sn3c" path="res://paredes.tscn" id="2_u5gvd"]
+
+[node name="AuroraPrincipal" type="Node2D"]
+
+[node name="Andy" parent="." instance=ExtResource("1_ld72f")]
+position = Vector2(145, 163)
+
+[node name="Paredes" parent="." instance=ExtResource("2_u5gvd")]
+position = Vector2(-10, 170)
+
+[node name="Paredes" parent="Paredes" instance=ExtResource("2_u5gvd")]
+position = Vector2(340, 0)

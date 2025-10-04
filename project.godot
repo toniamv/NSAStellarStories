@@ -11,5 +11,16 @@ config_version=5
 [application]
 
 config/name="AndySpace"
+run/main_scene="uid://gnae0rjsvhi7"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Assets/icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+
+[rendering]
+
+textures/decals/filter=0
+textures/light_projectors/filter=0
