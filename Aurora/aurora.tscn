@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbjuwshfhltm7"]
+[gd_scene load_steps=9 format=3 uid="uid://cbjuwshfhltm7"]
 
 [ext_resource type="Texture2D" uid="uid://c4yh2isf7y03a" path="res://Aurora/Aurora_Spritesheet.png" id="1_468m4"]
+[ext_resource type="Script" uid="uid://dh2cf3rnle0pe" path="res://Aurora/aurora_body_2d.gd" id="1_mlt73"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mlt73"]
 atlas = ExtResource("1_468m4")
@@ -50,15 +51,17 @@ size = Vector2(53.5, 60)
 
 [node name="AuroraBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(0, 2)
+script = ExtResource("1_mlt73")
 
 [node name="AnimatedAurora2D" type="AnimatedSprite2D" parent="AuroraBody2D"]
 texture_filter = 1
-position = Vector2(479.125, 54.669273)
+position = Vector2(235.87498, 23.330734)
 scale = Vector2(2.598684, 3.182628)
 sprite_frames = SubResource("SpriteFrames_65o5p")
 animation = &"hair"
-frame_progress = 0.8833227
+frame = 1
+frame_progress = 0.49091873
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AuroraBody2D"]
-position = Vector2(271.25, 61)
+position = Vector2(27.999985, 29.66146)
 shape = SubResource("RectangleShape2D_468m4")

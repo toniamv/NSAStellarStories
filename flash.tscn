@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bicf1yxhawp3l"]
+
+[ext_resource type="Texture2D" uid="uid://tmldhc2matxe" path="res://Assets/CameraSnap_Spritesheet.png" id="1_tn7t4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nnnon"]
+size = Vector2(2, 4)
+
+[node name="Flash" type="Node2D"]
+
+[node name="FlashBody" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="FlashBody"]
+texture_filter = 1
+position = Vector2(3.0000005, 15.999999)
+scale = Vector2(1.0122705, 0.61300397)
+texture = ExtResource("1_tn7t4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FlashBody"]
+position = Vector2(1, 4)
+shape = SubResource("RectangleShape2D_nnnon")
