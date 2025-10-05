@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cijnggrijal4h"]
+
+[ext_resource type="Script" uid="uid://1yaos4iga1ch" path="res://Plane/aeronave_body.gd" id="1_33aww"]
+[ext_resource type="Texture2D" uid="uid://bs0w6m0gvwmbi" path="res://Plane/Plane_Spritesheet.png" id="1_nhgcx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_33aww"]
+size = Vector2(25.212128, 22.08889)
+
+[node name="Aeronave" type="Node2D"]
+
+[node name="AeronaveBody" type="CharacterBody2D" parent="."]
+position = Vector2(467, 243)
+script = ExtResource("1_33aww")
+
+[node name="Sprite2D" type="Sprite2D" parent="AeronaveBody"]
+texture_filter = 1
+position = Vector2(189.5, 100)
+scale = Vector2(3.09375, 2.8125)
+texture = ExtResource("1_nhgcx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AeronaveBody"]
+position = Vector2(187, 97.0625)
+scale = Vector2(3.09375, 2.8125)
+shape = SubResource("RectangleShape2D_33aww")
