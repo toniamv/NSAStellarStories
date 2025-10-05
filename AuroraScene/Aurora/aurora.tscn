@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cbjuwshfhltm7"]
 
-[ext_resource type="Texture2D" uid="uid://c4yh2isf7y03a" path="res://Aurora/Aurora_Spritesheet.png" id="1_468m4"]
-[ext_resource type="Script" uid="uid://dh2cf3rnle0pe" path="res://Aurora/aurora_body_2d.gd" id="1_mlt73"]
+[ext_resource type="Texture2D" uid="uid://c4yh2isf7y03a" path="res://AuroraScene/Aurora/Aurora_Spritesheet.png" id="1_468m4"]
+[ext_resource type="Script" uid="uid://dh2cf3rnle0pe" path="res://AuroraScene/Aurora/aurora_body_2d.gd" id="1_mlt73"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mlt73"]
 atlas = ExtResource("1_468m4")

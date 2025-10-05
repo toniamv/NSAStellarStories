@@ -1,23 +1,47 @@
-[gd_scene load_steps=3 format=3 uid="uid://oyi654gk3n4s"]
+[gd_scene load_steps=4 format=3 uid="uid://oyi654gk3n4s"]
 
 [ext_resource type="PackedScene" uid="uid://cijnggrijal4h" path="res://Fase_Aviao/Plane/aeronave.tscn" id="1_wu0ap"]
-[ext_resource type="PackedScene" uid="uid://hmy1ers8sn3c" path="res://paredes.tscn" id="4_8vomw"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_o1dfw"]
+b = Vector2(0, 180)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_u2ium"]
+b = Vector2(322, 0)
 
 [node name="PlanePrincipal" type="Node2D"]
 
 [node name="Aeronave" parent="." instance=ExtResource("1_wu0ap")]
+texture_filter = 1
 position = Vector2(158, 85)
+scale = Vector2(0.3577499, 0.3577499)
 
-[node name="Paredes" parent="." instance=ExtResource("4_8vomw")]
-position = Vector2(332, -83)
+[node name="LimiteEsq" type="Node2D" parent="."]
 
-[node name="Paredes2" parent="." instance=ExtResource("4_8vomw")]
-position = Vector2(-1, -86)
+[node name="StaticBody2D" type="StaticBody2D" parent="LimiteEsq"]
 
-[node name="Paredes3" parent="." instance=ExtResource("4_8vomw")]
-position = Vector2(372, 190)
-rotation = 1.5707964
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimiteEsq/StaticBody2D"]
+texture_filter = 1
+shape = SubResource("SegmentShape2D_o1dfw")
 
-[node name="Paredes4" parent="." instance=ExtResource("4_8vomw")]
-position = Vector2(369, -10)
-rotation = 1.5707964
+[node name="LimitesDir" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="LimitesDir"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimitesDir/StaticBody2D"]
+position = Vector2(321, 1)
+shape = SubResource("SegmentShape2D_o1dfw")
+
+[node name="LimiteSup" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="LimiteSup"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimiteSup/StaticBody2D"]
+shape = SubResource("SegmentShape2D_u2ium")
+
+[node name="LimiteInf" type="Node2D" parent="."]
+position = Vector2(0, 181)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="LimiteInf"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LimiteInf/StaticBody2D"]
+shape = SubResource("SegmentShape2D_u2ium")

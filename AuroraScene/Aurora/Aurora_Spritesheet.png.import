@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyrql6608yhee"
-path="res://.godot/imported/Aurora_cenario.png-16c635ae535f0d608f9808d8f9fd591e.ctex"
+uid="uid://c4yh2isf7y03a"
+path="res://.godot/imported/Aurora_Spritesheet.png-8c25a0db771622af7131507814a6a939.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Aurora_cenario.png"
-dest_files=["res://.godot/imported/Aurora_cenario.png-16c635ae535f0d608f9808d8f9fd591e.ctex"]
+source_file="res://AuroraScene/Aurora/Aurora_Spritesheet.png"
+dest_files=["res://.godot/imported/Aurora_Spritesheet.png-8c25a0db771622af7131507814a6a939.ctex"]
 
 [params]
 

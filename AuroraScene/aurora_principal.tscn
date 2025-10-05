@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://gnae0rjsvhi7"]
+
+[ext_resource type="Script" uid="uid://dknv833cl7kx8" path="res://AuroraScene/aurora_principal.gd" id="1_1m4rn"]
+[ext_resource type="PackedScene" uid="uid://cyejr5av23j3d" path="res://AuroraScene/Andy/andy.tscn" id="1_ld72f"]
+[ext_resource type="PackedScene" uid="uid://cbjuwshfhltm7" path="res://AuroraScene/Aurora/aurora.tscn" id="3_u5gvd"]
+[ext_resource type="Texture2D" uid="uid://cyrql6608yhee" path="res://AuroraScene/Assets/Aurora_cenario.png" id="5_qdplx"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gqpds"]
+a = Vector2(0, -4)
+b = Vector2(0, 182)
+
+[node name="AuroraPrincipal" type="Node2D"]
+script = ExtResource("1_1m4rn")
+
+[node name="Andy" parent="." instance=ExtResource("1_ld72f")]
+position = Vector2(145, 164)
+
+[node name="Aurora" parent="." groups=["aurora"] instance=ExtResource("3_u5gvd")]
+position = Vector2(141, 1)
+scale = Vector2(0.5476687, 0.53621453)
+
+[node name="TimeLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HitsLabel" type="Label" parent="."]
+offset_top = 21.0
+offset_right = 40.0
+offset_bottom = 44.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(160, 89.5)
+scale = Vector2(1.009375, 1.0388889)
+texture = ExtResource("5_qdplx")
+
+[node name="ParedeEsq" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ParedeEsq"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeEsq/StaticBody2D"]
+shape = SubResource("SegmentShape2D_gqpds")
+
+[node name="ParedeDir" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ParedeDir"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeDir/StaticBody2D"]
+position = Vector2(322, 1)
+shape = SubResource("SegmentShape2D_gqpds")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tmldhc2matxe"
-path="res://.godot/imported/CameraSnap_Spritesheet.png-5c89c3ccdfdd2dcc5285076b590039cf.ctex"
+uid="uid://cyjnkh8w4bhvb"
+path="res://.godot/imported/Dr_Brall.png-f575563bf45c02533a835ac606e1ebbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/CameraSnap_Spritesheet.png"
-dest_files=["res://.godot/imported/CameraSnap_Spritesheet.png-5c89c3ccdfdd2dcc5285076b590039cf.ctex"]
+source_file="res://AuroraScene/Assets/Dr_Brall.png"
+dest_files=["res://.godot/imported/Dr_Brall.png-f575563bf45c02533a835ac606e1ebbc.ctex"]
 
 [params]
 

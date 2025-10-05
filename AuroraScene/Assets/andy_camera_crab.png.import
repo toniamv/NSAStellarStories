@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4yh2isf7y03a"
-path="res://.godot/imported/Aurora_Spritesheet.png-c06adcf6fa6dcedb7ac0a36802f28cc3.ctex"
+uid="uid://c0xda3q8rvvwr"
+path="res://.godot/imported/andy_camera_crab.png-5adf23d93c9c629b0e487ef6eb00667a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Aurora/Aurora_Spritesheet.png"
-dest_files=["res://.godot/imported/Aurora_Spritesheet.png-c06adcf6fa6dcedb7ac0a36802f28cc3.ctex"]
+source_file="res://AuroraScene/Assets/andy_camera_crab.png"
+dest_files=["res://.godot/imported/andy_camera_crab.png-5adf23d93c9c629b0e487ef6eb00667a.ctex"]
 
 [params]
 

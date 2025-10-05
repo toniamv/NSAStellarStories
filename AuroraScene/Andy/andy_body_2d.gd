@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed = 150
-const FlashScene := preload("res://flash.tscn")
+const FlashScene := preload("res://AuroraScene/flash.tscn")
 
 func _physics_process(delta):
 	var dir = 0

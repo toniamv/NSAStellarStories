@@ -1,17 +1,17 @@
 extends CharacterBody2D
 
-func _physics_process(delta):
-	var velocity = Vector2.ZERO
-	# Exemplo de movimentação (substitua pela sua lógica)
-	if Input.is_action_pressed("ui_right"):
-		velocity.x = 200
-	if Input.is_action_pressed("ui_left"):
-		velocity.x = -200
-	if Input.is_action_pressed("ui_down"):
-		velocity.y = 200
-	if Input.is_action_pressed("ui_up"):
-		velocity.y = -200
-	
-	var socorro = move_and_collide(velocity*delta)
-	if socorro:
-		velocity = velocity.bounce(socorro.get_normal())
+@export var speed: float = 200.0
+
+func _physics_process(delta: float) -> void:
+	var dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var motion := dir * speed * delta
+
+	# Move no eixo X
+	var col := move_and_collide(Vector2(motion.x, 0.0))
+	if col:
+		motion.x = 0.0
+
+	# Move no eixo Y (a partir da nova posição)
+	col = move_and_collide(Vector2(0.0, motion.y))
+	if col:
+		motion.y = 0.0

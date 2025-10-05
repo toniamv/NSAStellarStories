@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bicf1yxhawp3l"]
 
-[ext_resource type="Script" uid="uid://bscngb5twpevi" path="res://flash_body.gd" id="1_tn7t4"]
-[ext_resource type="Texture2D" uid="uid://tmldhc2matxe" path="res://Assets/CameraSnap_Spritesheet.png" id="2_nnnon"]
+[ext_resource type="Script" uid="uid://bscngb5twpevi" path="res://AuroraScene/flash_body.gd" id="1_tn7t4"]
+[ext_resource type="Texture2D" uid="uid://tmldhc2matxe" path="res://AuroraScene/Assets/CameraSnap_Spritesheet.png" id="2_nnnon"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nnnon"]
 size = Vector2(2, 4)

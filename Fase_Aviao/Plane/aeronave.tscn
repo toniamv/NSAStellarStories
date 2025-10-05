@@ -4,21 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://bs0w6m0gvwmbi" path="res://Fase_Aviao/Plane/Plane_Spritesheet.png" id="1_nhgcx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_33aww"]
-size = Vector2(25.212128, 22.08889)
+size = Vector2(25.084341, 20.114325)
 
 [node name="Aeronave" type="Node2D"]
 
 [node name="AeronaveBody" type="CharacterBody2D" parent="."]
-position = Vector2(10, 0)
+position = Vector2(19, 10.999999)
+scale = Vector2(0.42523208, 0.42523208)
 script = ExtResource("1_33aww")
 
 [node name="Sprite2D" type="Sprite2D" parent="AeronaveBody"]
 texture_filter = 1
-position = Vector2(-2.5, 8.000008)
-scale = Vector2(3.09375, 2.8125)
+position = Vector2(-2.351658, 7.0549707)
+scale = Vector2(2.8353481, 2.577589)
 texture = ExtResource("1_nhgcx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AeronaveBody"]
-position = Vector2(-5, 5.0625076)
+position = Vector2(-5.8791428, 2.285778)
 scale = Vector2(3.09375, 2.8125)
 shape = SubResource("RectangleShape2D_33aww")
