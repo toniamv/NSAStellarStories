@@ -1,12 +1,23 @@
 [gd_scene load_steps=3 format=3 uid="uid://oyi654gk3n4s"]
 
-[ext_resource type="PackedScene" uid="uid://cijnggrijal4h" path="res://Plane/aeronave.tscn" id="1_wu0ap"]
-[ext_resource type="PackedScene" uid="uid://hmy1ers8sn3c" path="res://Parede/paredes.tscn" id="4_8vomw"]
+[ext_resource type="PackedScene" uid="uid://cijnggrijal4h" path="res://Fase_Aviao/Plane/aeronave.tscn" id="1_wu0ap"]
+[ext_resource type="PackedScene" uid="uid://hmy1ers8sn3c" path="res://paredes.tscn" id="4_8vomw"]
 
 [node name="PlanePrincipal" type="Node2D"]
 
 [node name="Aeronave" parent="." instance=ExtResource("1_wu0ap")]
-position = Vector2(-142, -33)
+position = Vector2(158, 85)
 
 [node name="Paredes" parent="." instance=ExtResource("4_8vomw")]
-position = Vector2(257, 29)
+position = Vector2(332, -83)
+
+[node name="Paredes2" parent="." instance=ExtResource("4_8vomw")]
+position = Vector2(-1, -86)
+
+[node name="Paredes3" parent="." instance=ExtResource("4_8vomw")]
+position = Vector2(372, 190)
+rotation = 1.5707964
+
+[node name="Paredes4" parent="." instance=ExtResource("4_8vomw")]
+position = Vector2(369, -10)
+rotation = 1.5707964

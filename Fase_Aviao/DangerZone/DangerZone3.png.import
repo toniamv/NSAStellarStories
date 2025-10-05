@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqs2irn5ebkja"
-path="res://.godot/imported/DangerZone3.png-cc2eca2633f22fd1a0297652fcc50fcd.ctex"
+path="res://.godot/imported/DangerZone3.png-21c48bc5dc41ed43a1fe8dabb0c54f60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DangerZone/DangerZone3.png"
-dest_files=["res://.godot/imported/DangerZone3.png-cc2eca2633f22fd1a0297652fcc50fcd.ctex"]
+source_file="res://Fase_Aviao/DangerZone/DangerZone3.png"
+dest_files=["res://.godot/imported/DangerZone3.png-21c48bc5dc41ed43a1fe8dabb0c54f60.ctex"]
 
 [params]
 
