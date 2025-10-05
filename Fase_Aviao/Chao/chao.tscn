@@ -5,7 +5,7 @@ size = Vector2(1153.5, 40)
 
 [node name="Chao" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["paredes"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(578.25, -22)

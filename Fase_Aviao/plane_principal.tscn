@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://oyi654gk3n4s"]
+[gd_scene load_steps=7 format=3 uid="uid://oyi654gk3n4s"]
 
+[ext_resource type="Script" uid="uid://by7ee4rqr23yr" path="res://Fase_Aviao/plane_principal.gd" id="1_ixj22"]
 [ext_resource type="PackedScene" uid="uid://cijnggrijal4h" path="res://Fase_Aviao/Plane/aeronave.tscn" id="1_wu0ap"]
+[ext_resource type="PackedScene" uid="uid://dd0vvajmv168m" path="res://Fase_Aviao/DangerZone/obstacles.tscn" id="2_u2ium"]
+[ext_resource type="Texture2D" uid="uid://tv5rf401jjpw" path="res://Fase_Aviao/Plane/Oceano_Spritesheet.png" id="4_2eysu"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_o1dfw"]
 b = Vector2(0, 180)
@@ -9,39 +12,66 @@ b = Vector2(0, 180)
 b = Vector2(322, 0)
 
 [node name="PlanePrincipal" type="Node2D"]
+script = ExtResource("1_ixj22")
 
 [node name="Aeronave" parent="." instance=ExtResource("1_wu0ap")]
 texture_filter = 1
-position = Vector2(158, 85)
-scale = Vector2(0.3577499, 0.3577499)
+position = Vector2(127, 86)
 
-[node name="LimiteEsq" type="Node2D" parent="."]
+[node name="LimiteEsq" type="Node2D" parent="." groups=["paredes"]]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="LimiteEsq"]
+[node name="StaticBody2D" type="StaticBody2D" parent="LimiteEsq" groups=["paredes"]]
+collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LimiteEsq/StaticBody2D"]
 texture_filter = 1
 shape = SubResource("SegmentShape2D_o1dfw")
 
-[node name="LimitesDir" type="Node2D" parent="."]
+[node name="LimitesDir" type="Node2D" parent="." groups=["paredes"]]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="LimitesDir"]
+[node name="StaticBody2D" type="StaticBody2D" parent="LimitesDir" groups=["paredes"]]
+collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LimitesDir/StaticBody2D"]
 position = Vector2(321, 1)
 shape = SubResource("SegmentShape2D_o1dfw")
 
-[node name="LimiteSup" type="Node2D" parent="."]
+[node name="LimiteSup" type="Node2D" parent="." groups=["paredes"]]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="LimiteSup"]
+[node name="StaticBody2D" type="StaticBody2D" parent="LimiteSup" groups=["paredes"]]
+collision_layer = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LimiteSup/StaticBody2D"]
 shape = SubResource("SegmentShape2D_u2ium")
 
-[node name="LimiteInf" type="Node2D" parent="."]
+[node name="LimiteInf" type="Node2D" parent="." groups=["paredes"]]
 position = Vector2(0, 181)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="LimiteInf"]
+[node name="StaticBody2D" type="StaticBody2D" parent="LimiteInf" groups=["paredes"]]
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LimiteInf/StaticBody2D"]
 shape = SubResource("SegmentShape2D_u2ium")
+
+[node name="Obstacles" parent="." instance=ExtResource("2_u2ium")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(161, 90)
+texture = ExtResource("4_2eysu")
+
+[node name="TimeLabel" type="Label" parent="."]
+z_index = 1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HitsLabel" type="Label" parent="."]
+z_index = 1
+offset_top = 21.0
+offset_right = 40.0
+offset_bottom = 44.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
