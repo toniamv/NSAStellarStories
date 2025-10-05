@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://gnae0rjsvhi7"]
+[gd_scene load_steps=6 format=3 uid="uid://gnae0rjsvhi7"]
 
 [ext_resource type="Script" uid="uid://dknv833cl7kx8" path="res://aurora_principal.gd" id="1_1m4rn"]
-[ext_resource type="PackedScene" uid="uid://cyejr5av23j3d" path="res://andy.tscn" id="1_ld72f"]
+[ext_resource type="PackedScene" uid="uid://cyejr5av23j3d" path="res://Andy/andy.tscn" id="1_ld72f"]
 [ext_resource type="PackedScene" uid="uid://hmy1ers8sn3c" path="res://paredes.tscn" id="2_u5gvd"]
 [ext_resource type="PackedScene" uid="uid://cbjuwshfhltm7" path="res://Aurora/aurora.tscn" id="3_u5gvd"]
+[ext_resource type="Texture2D" uid="uid://cyrql6608yhee" path="res://Assets/Aurora_cenario.png" id="5_qdplx"]
 
 [node name="AuroraPrincipal" type="Node2D"]
 script = ExtResource("1_1m4rn")
@@ -17,6 +18,7 @@ scale = Vector2(0.8928326, 0.45415172)
 
 [node name="Paredes2" parent="." instance=ExtResource("2_u5gvd")]
 position = Vector2(331, -7)
+scale = Vector2(1, 0.45978758)
 
 [node name="Aurora" parent="." groups=["aurora"] instance=ExtResource("3_u5gvd")]
 position = Vector2(141, 1)
@@ -30,3 +32,14 @@ offset_bottom = 23.0
 offset_top = 21.0
 offset_right = 40.0
 offset_bottom = 44.0
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(161.5, 89)
+scale = Vector2(1.009375, 1)
+texture = ExtResource("5_qdplx")

@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=3 uid="uid://cyejr5av23j3d"]
+
+[ext_resource type="Script" uid="uid://vh062f33tm6x" path="res://Andy/andy_body_2d.gd" id="1_iv1f8"]
+[ext_resource type="Texture2D" uid="uid://c0xda3q8rvvwr" path="res://Assets/andy_camera_crab.png" id="2_g21by"]
+[ext_resource type="Texture2D" uid="uid://cdkg74mhmxlgx" path="res://Assets/andy_camerasnap_crab.png" id="3_sn7tk"]
+[ext_resource type="Script" uid="uid://cwaf3m0oiq2o8" path="res://Andy/state_machine.gd" id="4_dwf5w"]
+[ext_resource type="Script" uid="uid://d4ditmj5us8f3" path="res://Andy/idle.gd" id="5_kub2k"]
+[ext_resource type="Script" uid="uid://c50fufh8sakdi" path="res://Andy/crab_camera.gd" id="6_x1cy3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iv1f8"]
+size = Vector2(16, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kub2k"]
+atlas = ExtResource("2_g21by")
+region = Rect2(0, 12, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1cy3"]
+atlas = ExtResource("2_g21by")
+region = Rect2(18, 12, 18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i5dv"]
+atlas = ExtResource("3_sn7tk")
+region = Rect2(0, 14, 18, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdgpu"]
+atlas = ExtResource("3_sn7tk")
+region = Rect2(18, 14, 18, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ami35"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kub2k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1cy3")
+}],
+"loop": true,
+"name": &"krab_shoot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5i5dv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdgpu")
+}],
+"loop": true,
+"name": &"krab_wakl",
+"speed": 5.0
+}]
+
+[node name="Andy" type="Node2D"]
+
+[node name="AndyBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_iv1f8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AndyBody2D"]
+position = Vector2(8, 5)
+shape = SubResource("RectangleShape2D_iv1f8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AndyBody2D"]
+texture_filter = 1
+position = Vector2(8, 2)
+sprite_frames = SubResource("SpriteFrames_ami35")
+animation = &"krab_wakl"
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("4_dwf5w")
+
+[node name="Crab_walk" type="Node" parent="StateMachine"]
+script = ExtResource("5_kub2k")
+
+[node name="Crab_camera" type="Node" parent="StateMachine"]
+script = ExtResource("6_x1cy3")

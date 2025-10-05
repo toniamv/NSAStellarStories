@@ -3,9 +3,9 @@ extends Node2D
 @export var max_hits: int = 5
 @export var max_time: float = 30.0
 
-var hits := 0
-var time_left := 0.0
-var _last_sec := -1
+var hits = 0
+var time_left = 0.0
+var _last_sec = -1
 
 @onready var time_label: Label = $TimeLabel
 @onready var hits_label: Label = $HitsLabel

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcp2mkkrsp818"
-path="res://.godot/imported/Andy_Camera_Spritesheet.png-389c69f784ddacd37b4010689e4da949.ctex"
+uid="uid://c0xda3q8rvvwr"
+path="res://.godot/imported/andy_camera_crab.png-27a29269f60f3c3e81092356badcc2bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Andy_Camera_Spritesheet.png"
-dest_files=["res://.godot/imported/Andy_Camera_Spritesheet.png-389c69f784ddacd37b4010689e4da949.ctex"]
+source_file="res://Assets/andy_camera_crab.png"
+dest_files=["res://.godot/imported/andy_camera_crab.png-27a29269f60f3c3e81092356badcc2bd.ctex"]
 
 [params]
 

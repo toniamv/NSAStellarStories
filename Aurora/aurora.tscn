@@ -55,8 +55,8 @@ script = ExtResource("1_mlt73")
 
 [node name="AnimatedAurora2D" type="AnimatedSprite2D" parent="AuroraBody2D"]
 texture_filter = 1
-position = Vector2(235.87498, 23.330734)
-scale = Vector2(2.598684, 3.182628)
+position = Vector2(246, 28)
+scale = Vector2(2.7144735, 3.182628)
 sprite_frames = SubResource("SpriteFrames_65o5p")
 animation = &"hair"
 frame = 1
