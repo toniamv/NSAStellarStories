@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw07fy2xk438f"]
+
+[ext_resource type="Script" uid="uid://cqr506inm8dpp" path="res://cena_inicial.gd" id="1_4642i"]
+
+[node name="CenaInicial" type="Node2D"]
+script = ExtResource("1_4642i")
+
+[node name="Node" type="Node" parent="."]

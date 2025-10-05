@@ -6,9 +6,11 @@ extends Node2D
 var hits = 0
 var time_left = 0.0
 var _last_sec = -1
+var _dialog_active = false
 
 @onready var time_label: Label = $TimeLabel
 @onready var hits_label: Label = $HitsLabel
+
 
 func _ready() -> void:
 	time_left = max_time
@@ -38,6 +40,7 @@ func register_hit() -> void:
 
 func victory() -> void:
 	print("🎉 Vitória!")
+	get_tree().change_scene_to_file("res://Fase_Aviao/plane_principal.tscn")
 	# trocar de cena / mostrar painel aqui
 
 func game_over() -> void:

@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.109353065, 0.7421875, 0.00579834, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "doutor",
+&"description": "",
+&"display_name": "Doutor",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(30, -60),
+&"portraits": {
+"doutor": {
+"export_overrides": {
+"image": "\"res://Cutscenes/Sprites/teste64.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 0.3
+}

@@ -1,0 +1,6 @@
+[background arg="res://Cutscenes/Sprites/Background.png" fade="0.5" transition="Simple Fade"]
+join Andy left
+join Doutor right
+Andy: Atende o telefone...\
+Alô? Dr.Brall? O que foi? São 4 da manhã!!
+Doutor: Ah, graças ao cosmos, você atendeu! Escute, preciso da sua ajuda agora! Estou no laboratório e algo muito sério está acontecendo aqui...

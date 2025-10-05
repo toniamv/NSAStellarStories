@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://due7wpuqs4dq1"]
+
+[ext_resource type="Script" uid="uid://hawvq8vs8idy" path="res://Cutscenes/cutscene.gd" id="1_7hprr"]
+[ext_resource type="Texture2D" uid="uid://drkikvfa5uv2l" path="res://Cutscenes/Sprites/teste.png" id="2_2fm8a"]
+[ext_resource type="Texture2D" uid="uid://dbtdwcxolbklc" path="res://Cutscenes/Sprites/teste64.png" id="3_1e7lu"]
+
+[node name="CutsceneInicial" type="CanvasLayer"]
+script = ExtResource("1_7hprr")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_top = 111.0
+offset_right = 319.0
+offset_bottom = 181.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="NinePatchRect"]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 320.0
+offset_bottom = 69.0
+color = Color(0, 0, 0, 0.76862746)
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 6.0
+offset_top = 134.0
+offset_right = 314.0
+offset_bottom = 174.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_top = -0.12222222
+anchor_right = 0.06875
+offset_left = 3.0
+offset_top = 82.0
+offset_right = 58.0
+offset_bottom = 132.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Teste" type="Sprite2D" parent="TextureRect"]
+position = Vector2(57, 9)
+texture = ExtResource("2_2fm8a")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 259.0
+offset_top = 73.0
+offset_right = 314.0
+offset_bottom = 124.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Teste64" type="Sprite2D" parent="TextureRect2"]
+position = Vector2(7, 12)
+texture = ExtResource("3_1e7lu")
