@@ -13,36 +13,41 @@ b = Vector2(0, 182)
 script = ExtResource("1_1m4rn")
 
 [node name="Andy" parent="." instance=ExtResource("1_ld72f")]
-position = Vector2(145, 164)
+position = Vector2(144.5, 166.49998)
+scale = Vector2(0.99999994, 0.99999994)
 
 [node name="Aurora" parent="." groups=["aurora"] instance=ExtResource("3_u5gvd")]
-position = Vector2(139, 15)
-scale = Vector2(0.5476687, 0.53621453)
+position = Vector2(138.5, 17.499992)
+scale = Vector2(0.54766864, 0.5362145)
 
 [node name="TimeLabel" type="Label" parent="."]
 texture_filter = 1
 texture_repeat = 1
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 43.0
-offset_bottom = 27.0
+offset_left = 2.5000153
+offset_top = 6.5
+offset_right = 42.500015
+offset_bottom = 29.5
 theme_override_font_sizes/font_size = 10
+metadata/_edit_use_anchors_ = true
 
 [node name="HitsLabel" type="Label" parent="."]
-offset_left = 259.0
-offset_top = 4.0
-offset_right = 299.0
-offset_bottom = 27.0
+offset_left = 258.5
+offset_top = 6.5
+offset_right = 298.5
+offset_bottom = 29.5
 theme_override_font_sizes/font_size = 10
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
 texture_filter = 1
-position = Vector2(159.99998, 89.00001)
-scale = Vector2(1.009375, 1.0388889)
+position = Vector2(159.49997, 91.5)
+scale = Vector2(1.0093749, 1.0388888)
 texture = ExtResource("5_qdplx")
 
 [node name="ParedeEsq" type="Node2D" parent="."]
+position = Vector2(-0.49998474, 2.5)
+scale = Vector2(0.99999994, 0.99999994)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="ParedeEsq"]
 
@@ -50,6 +55,8 @@ texture = ExtResource("5_qdplx")
 shape = SubResource("SegmentShape2D_gqpds")
 
 [node name="ParedeDir" type="Node2D" parent="."]
+position = Vector2(-0.49998474, 2.5)
+scale = Vector2(0.99999994, 0.99999994)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="ParedeDir"]
 

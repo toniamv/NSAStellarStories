@@ -1,0 +1,10 @@
+[background arg="res://AuroraScene/Assets/Aurora_cenario.png" fade="0.0"]
+join photographer left [mirrored="true"]
+join andy left [mirrored="true"]
+join aurora right [mirrored="true"]
+photographer: Stunning shot! This one’s going on the front page of Cosmic Weather Magazine!
+aurora: Blushes in green and pink. I’ll be expecting royalties.
+andy: Mission complete! Space weather isn’t just chaos — it’s beauty, too.
+\doctor: Well done, Luma! Come back — I’ve got more portals  waiting for you!
+andy: On my way! The Sun may be wild… but I’m wilder!
+[end_timeline]

@@ -1,0 +1,17 @@
+[background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0"]
+join andy left [mirrored="true"]
+join doctor right [mirrored="true"]
+andy: Whew! Mission accomplished, Doctor! Captain Bob landed safely!
+\doctor: Excellent, Luma! I knew you could handle it!
+andy: But… Doctor, I’ve gotta admit, I got a little worried. These space weather things are kinda scary! Explosions, communication failures, the Sun causing chaos… It feels like everything it does is trouble!
+\doctor: Ah, my brave little solar guardian… space weather can cause problems, yes. But it’s also one of the most fascinating and beautiful things in the universe!
+andy: So there are good effects too?
+\doctor: Absolutely! Not everything the Sun sends to Earth is dangerous. Sometimes, the same energy that disrupts satellites also creates incredible light shows that color the sky.
+andy: Light shows?
+\doctor: Oh yes… one of the most amazing natural wonders. They’re like glowing curtains that dance across the sky. But to truly understand, you’ll have to see it with your own eyes.
+andy: So you’re saying… the next mission is to see the pretty side of space weather?
+\doctor: Exactly! A photographer in Iceland is trying to capture the perfect shot of these lights. And you, dear Luma, will be his cosmic assistant!
+andy: Whoa! From airplane turbulence… to actual frozen tundra!
+\doctor:  Grab your warmest coat — and get ready for your next adventure! Good luck, Luma! And remember\: even in the most intense explosions, the universe hides beauty.
+andy: You got it, Doctor! Time to discover the Sun’s charming side!
+[end_timeline]

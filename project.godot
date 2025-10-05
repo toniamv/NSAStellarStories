@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="AndySpace"
-run/main_scene="uid://gnae0rjsvhi7"
+run/main_scene="uid://c4u7qshf8cs0i"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://AuroraScene/Assets/icon.svg"
 
@@ -22,11 +22,23 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Andy": "res://Cutscenes/Personagens/Andy.dch",
-"Doutor": "res://Cutscenes/Personagens/Doutor.dch"
+"andy": "res://Views/Cutscenes/andy.dch",
+"aurora": "res://AuroraScene/Assets/aurora.dch",
+"controlT": "res://Views/Cutscenes/controlT.dch",
+"doctor": "res://Views/Cutscenes/doctor.dch",
+"phone": "res://Views/Cutscenes/phone.dch",
+"photographer": "res://Views/Cutscenes/photographer.dch",
+"piloto": "res://Views/Cutscenes/piloto.dch",
+"solarf": "res://Views/Cutscenes/solarf.dch"
 }
 directories/dtl_directory={
-"timeline": "res://Cutscenes/Timeline/timeline.dtl"
+"cutscene01": "res://Views/Cutscenes/cutscene01.dtl",
+"cutscene02": "res://Views/Cutscenes/cutscene02.dtl",
+"cutscene03": "res://Views/Cutscenes/cutscene03.dtl",
+"cutscene04": "res://Views/Cutscenes/cutscene04.dtl",
+"cutscene05": "res://Views/Cutscenes/cutscene05.dtl",
+"cutscene06": "res://Views/Cutscenes/cutscene06.dtl",
+"cutscene07": "res://Views/Cutscenes/cutscene07.dtl"
 }
 layout/style_directory={}
 glossary/default_case_sensitive=true
@@ -69,9 +81,8 @@ audio/channel_defaults={
 
 [display]
 
-window/size/viewport_width=320
-window/size/viewport_height=180
-window/size/mode=3
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="viewport"
 
 [editor_plugins]
@@ -81,6 +92,7 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 [global_group]
 
 paredes=""
+buller_container=""
 
 [input]
 
@@ -111,5 +123,6 @@ dialogic_default_action={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 textures/decals/filter=0
 textures/light_projectors/filter=0

@@ -1,0 +1,43 @@
+[background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0"]
+join andy left [mirrored="true"]
+join piloto right [mirrored="true"]
+andy: Hello! This is Luma from the Space Weather Laboratory! How can I help?
+piloto: This is Captain Bob! Finally, someone to assist! I’m flying over the Atlantic and… I’ve completely lost contact with the control tower!
+andy: You’re a pilot?
+piloto: That’s right! Long-distance pilot. I take people from one continent to another. But right now I’m basically flying blind — no communication, no route confirmation… total silence.
+andy: But what happened?
+piloto: Everything was normal, and suddenly the radios started crackling. First a buzzing sound, and then… nothing. Complete silence. I tried every frequency — but HF is gone!
+andy: HF?
+piloto: High Frequency! It’s the type of radio we use to talk to air traffic control when flying over the ocean. Without it, we can’t receive instructions or call for help. It’s like driving in the dark without headlights!
+andy: Yikes… so space weather is behind this?
+piloto: Exactly. Those solar flares from the Sun are sneaky! They unleash so much energy that they interfere with radio signals here on Earth — especially high-frequency ones.
+andy: So you’re also a victim of the Sun’s mood swings!
+piloto: That’s right, Luma. The Sun may be millions of miles away, but it still finds a way to mess with my flight schedule.
+update piloto leftmost
+join solarf right
+solarf: Ha-ha! Surprise, Earthlings! Did you feel my arrival?
+andy: Aaaah! Who are you?!
+solarf: I am an X-Class Solar Flare! The most intense explosion in the entire solar system!
+andy: X-Class?
+solarf: That’s how scientists measure my power. The weakest flares are “A,” then come “B,” “C,” “M”… and finally, me — “X”! I’m the strongest of them all! The champion of solar explosions!
+andy: So you’re the one who caused Captain Bob’s radio blackout!
+solarf: Caused? I prefer powered up! I was born on the Sun when its magnetic fields got all tangled up and then — BOOM! — reconnected suddenly! All that energy gets blasted out as light and radiation!
+piloto: Thanks to you, I lost contact with the tower!
+solarf: Hey, don’t take it personally! I travel at the speed of light, because… well, I am light! I don’t even have time to think!
+solarf: I don’t mean to cause chaos… it’s just that on my way, I carry such strong radiation waves that they scramble radio signals, GPS, and even airplane communications.
+andy: So when you reach Earth, devices get confused?
+solarf: Exactly! I mess with the ionosphere — a layer of the atmosphere that reflects radio waves. When I pass through, the waves get lost, mixed up… and *poof*, communication gone!\
+But don’t worry — you’re safe on the ground. Earth’s atmosphere and magnetic field protect people from my harmful radiation.
+piloto: Well, if I manage to land this thing, I’ll thank both of you!
+andy: And I promise to help balance things out! Dr. Brall, is there a way to help Captain Bob?
+leave solarf
+leave piloto
+leave andy
+[background arg="res://Views/Cutscenes/aviaogame.jpeg" fade="0.0" transition="Simple Fade"]
+[wait time="1.0"]
+\doctor: (voice through communicator)\
+Look at the map\: the red areas are where communication is down! You can’t fly through those zones. Luma, activate the manual controls. We need to reroute the aircraft immediately! That’s the only way to re-establish contact with air traffic control!
+[background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0" transition="Simple Fade"]
+join andy center
+andy: Got it! Diverting course to escape the Radio Blackout! Captain Bob, hold tight. We’re bringing the signal back and making sure this flight lands safely!
+[end_timeline]

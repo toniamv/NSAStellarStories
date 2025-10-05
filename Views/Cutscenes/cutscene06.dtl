@@ -1,0 +1,30 @@
+[background arg="res://AuroraScene/Assets/Aurora_cenario.png" fade="0.0"]
+join andy left [mirrored="true"]
+join photographer right
+andy: Brrr! Why did no one warn me that Iceland was basically a freezer?!
+photographer: Hey there! You must be Luma — Professor Brall’s assistant!
+andy: Yup! And… who are you?
+photographer: Name’s Wyatt. Photographer and full-time wolf enthusiast! I travel all over the world capturing extreme weather phenomena. Tornadoes, sandstorms, blizzards… but this time, I’m here for something special.
+andy: The Aurora Borealis?
+photographer: Exactly! But tonight’s sky is cloudy… I can’t get a clear shot. To photograph the perfect Aurora, I need you to help me find the best spot and adjust the camera correctly. Ready?
+andy: Always! But… what is the Aurora Borealis, exactly?
+photographer: Ah! A perfect question! It’s one of Earth’s coolest tricks. When solar particles travel through space and hit Earth’s magnetic field, they get guided toward the north and south poles. When they collide with gases in the atmosphere…
+leave photographer
+leave andy
+join aurora center [mirrored="true"]
+aurora: Ta-daaaaa! I light up the sky!
+[wait time="1.0"]
+update aurora right
+join photographer left [mirrored="true"]
+join andy left [mirrored="true"]
+andy: WHOA! You can talk?!
+aurora: Only when someone appreciates my entrance properly. I’m not just any light — I’m a magnetic masterpiece!
+photographer: See? Even the Aurora is dramatic.
+aurora: Excuse me, I am literally dancing plasma! So… want to know my secret colors?
+andy: Yes!! Why are you sometimes green? Sometimes pink? Or purple??
+aurora: It depends on which gas I bump into when I enter the atmosphere!\
+- When I meet oxygen high up in the sky — I glow green.\
+- When I meet nitrogen — I show purple or pink.
+andy: So… the Sun sends charged particles → Earth’s magnetic field pulls them → they hit gases → and then boom, sky disco!
+aurora: Precisely. Now stop talking and take my picture! I look fabulous tonight!
+[end_timeline]

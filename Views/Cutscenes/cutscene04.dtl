@@ -1,0 +1,9 @@
+[background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0"]
+join andy left
+join piloto leftmost
+join solarf right
+controlT: "Flight 347, communication re-established.”
+piloto: Communication restored! Thank you so much, Luma. Without you, I wouldn’t have landed safely!
+andy: It was an honor, Captain! And you — Solar Flare… try to go easy next time, okay?
+solarf: I’ll try… but with the Sun, you never know!
+[end_timeline]

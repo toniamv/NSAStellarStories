@@ -1,0 +1,29 @@
+[background arg="res://Views/Cutscenes/fundoaviao.png" fade="0.0"]
+join doctor right [animation="Slide From Right" mirrored="true"]
+join andy left [animation="Slide From Left" mirrored="true"]
+\doctor: Finally! My favorite assistant has arrived!
+andy: Whoa, Doctor! The lab looks like a spaceship today! Did you sleep here again?
+\doctor: Me? Sleep? Of course not! I just… blinked for eight hours while doing very important calculations!
+andy: Uh-huh, suuure. So, what’s going on? You said it was urgent!
+\doctor: It is urgent. Luma, we’re dealing with something big. Way bigger than beads in the microwave or explosive gelatin!
+andy: Hey! You were the one who came up with the explosive gelatin!
+\doctor: Focus! Have you ever heard of space weather?
+andy: Space… weather? Like… weather forecast… but in space?
+\doctor: Exactly! Just like Earth has sunny days, rain, and wind, the Sun also goes through mood swings! Space weather is what we call the changes that happen up there in space. Things like solar explosions, radiation storms, and huge clouds of particles.
+andy: Explosions?! Like space fireworks?!
+\doctor: Way stronger! And those explosions can reach Earth. Sometimes they mess with satellites, power grids, or even airplane communication.
+andy: So… the Sun can actually cause trouble down here?
+\doctor: Oh, it sure can! And that’s why I need your help.\
+To understand it all, you need to know a secret\: the Sun follows a special 11-year cycle.
+andy: A cycle?
+\doctor: The Sun goes through calm moments and then enters super active phases with tons of explosions.
+andy: So the Sun has happy phases and angry phases?
+\doctor: Let’s put it that way! And when it gets angry, it throws so much energy at us that it can mess up radios, GPS, and even the internet!
+andy: Whoa!
+\doctor: And you, Luma, will be my official assistant in investigating these phenomena!
+andy: Alright! What do I need to do?
+\doctor: Today, one of those explosions hit Earth and scrambled the communication system of an airplane mid-flight!
+andy: WHAT?? Is it going to crash?!
+\doctor: Not if we can help it. One of the portals is directly linked to the airplane. Your first mission is to help the pilot land safely — using what you’ll learn about space weather! Are you ready to become the planet’s guardian against the Sun’s wild moods?
+andy: Ready?! I was born for this!
+[end_timeline]

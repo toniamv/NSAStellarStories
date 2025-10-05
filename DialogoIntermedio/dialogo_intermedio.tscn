@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://pmrha8pr8bx8"]
-
-[ext_resource type="Script" uid="uid://b1p4a03pvac0n" path="res://DialogoIntermedio/dialogo_intermedio.gd" id="1_cci51"]
-
-[node name="DialogoIntermedio" type="Node2D"]
-script = ExtResource("1_cci51")

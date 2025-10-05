@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6jckadmvd1ka"]
+
+[ext_resource type="PackedScene" uid="uid://gnae0rjsvhi7" path="res://AuroraScene/aurora_principal.tscn" id="1_32shm"]
+
+[node name="Viewport" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+stretch_shrink = 4
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(320, 180)
+render_target_update_mode = 4
+
+[node name="World" type="Node2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+
+[node name="AuroraPrincipal" parent="CanvasLayer/SubViewportContainer/SubViewport/World" instance=ExtResource("1_32shm")]
+
+[node name="Projeteis" type="Node2D" parent="CanvasLayer/SubViewportContainer/SubViewport/World" groups=["buller_container"]]
