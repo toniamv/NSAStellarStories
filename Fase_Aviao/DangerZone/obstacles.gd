@@ -1,7 +1,7 @@
 extends Node2D
 
 const IMAGES = ["res://Fase_Aviao/DangerZone/DangerZone1.png", "res://Fase_Aviao/DangerZone/DangerZone2.png", "res://Fase_Aviao/DangerZone/DangerZone3.png"]
-const COLLISION_SIZE = 45
+const COLLISION_SIZE = 40
 
 func _ready():
 	# Escolhe uma imagem aleatória

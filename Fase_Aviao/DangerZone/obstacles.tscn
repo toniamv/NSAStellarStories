@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd0vvajmv168m"]
+[gd_scene load_steps=4 format=3 uid="uid://dd0vvajmv168m"]
 
 [ext_resource type="Script" uid="uid://8x66tiss4gqn" path="res://Fase_Aviao/DangerZone/obstacles.gd" id="1_47o4p"]
 [ext_resource type="Script" uid="uid://dyfn3lpmj45c" path="res://Fase_Aviao/DangerZone/character_body_2d.gd" id="2_3i8gq"]
-[ext_resource type="Script" uid="uid://dm03c37igu2gs" path="res://Fase_Aviao/DangerZone/collision_shape_2d.gd" id="3_3i8gq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_47o4p"]
 size = Vector2(20, 40)
@@ -19,4 +18,3 @@ script = ExtResource("2_3i8gq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, -30)
 shape = SubResource("RectangleShape2D_47o4p")
-script = ExtResource("3_3i8gq")
