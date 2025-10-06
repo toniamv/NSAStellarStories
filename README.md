@@ -1,86 +1,86 @@
 # The Secrets of Space Weather
 
-Um jogo digital educativo que apresenta o “clima espacial” para crianças e adolescentes de forma lúdica, visual e interativa — conectando ciência e imaginação.
+A playful, visual, and interactive educational game that introduces “space weather” to kids and teens—connecting science and imagination.
 
 ---
 
-## Sumário
+## Summary
 
-Nosso projeto, “The Secrets of Space Weather”, ensina conceitos de clima espacial (como erupções solares, CMEs, tempestades de radiação e seus efeitos na Terra) por meio de um jogo divertido e acessível. Para enfrentar a baixa conscientização sobre o tema entre jovens, usamos missões curtas gamificadas que transformam dados científicos abstratos em experiências práticas e relacionáveis.  
-O projeto aproxima ciência e educação, incentivando a curiosidade e promovendo STEM (Ciência, Tecnologia, Engenharia e Matemática).
+Our project, “The Secrets of Space Weather,” teaches space weather concepts (such as solar flares, CMEs, radiation storms, and their effects on Earth) through a fun, accessible game. To address low awareness among young audiences, we use short, gamified missions that turn abstract scientific data into practical, relatable experiences.  
+The project bridges science and education, fostering curiosity and promoting STEM (Science, Technology, Engineering, and Mathematics).
 
 ---
 
-## Desafio
+## Challenge
 
 **Stellar Stories: Space Weather Through the Eyes of Earthlings (NASA Space Apps)**  
-Embora o Sol esteja a milhões de quilômetros, sua atividade pode impactar tecnologias e a vida diária na Terra e no espaço. O desafio é escrever e ilustrar uma história digital para explicar o clima espacial e seus impactos em diferentes públicos (pilotos, astronautas, agricultores, operadores de rede, etc.), podendo narrar do ponto de vista de pessoas afetadas ou de um fenômeno solar (ex.: uma erupção solar).
+Although the Sun is millions of kilometers away, its activity can impact technology and daily life on Earth and in space. The challenge is to write and illustrate a digital story that explains space weather and its impacts on different audiences (pilots, astronauts, farmers, grid operators, etc.), either from the perspective of affected people or from a solar phenomenon itself (e.g., a solar flare).
 
 ---
 
-## Projeto
+## Project
 
-Repositório: **https://github.com/toniamv/NSAStellarStories**
+Repository: **https://github.com/toniamv/NSAStellarStories**
 
 ---
 
-## Detalhes do Projeto
+## Project Details
 
-### Narrativa
+### Narrative
 
-A história segue **Luma**, uma jovem curiosa e apaixonada por ciência, guiada pelo amigo cientista **Dr. Brall**. Em três fases, Luma encontra personagens impactados pelo clima espacial — uma piloto com perda de sinal, um fotógrafo em busca de auroras e astronautas expostos à radiação solar — e também conhece **os próprios fenômenos personificados** (como a Erupção Solar e a Tempestade de Radiação), que explicam suas origens e comportamentos.
+The story follows **Luma**, a curious, science-loving girl guided by her scientist friend **Dr. Brall**. Across three phases, Luma meets people affected by space weather—a pilot facing signal loss, a photographer chasing auroras, and astronauts exposed to solar radiation—and she also meets **the personified phenomena** themselves (like a Solar Flare and a Radiation Storm), which explain their origins and behaviors.
 
 ![Luma, Dr.Brall, pilot and photographer](https://assets.spaceappschallenge.org/media/images/Captura_de_tela_2025-10-05_180631.width-500.png)
 
-Cada encontro traz **diálogos lúdicos** que traduzem os conceitos em comparações fáceis de entender e **mini-games temáticos** que reforçam o aprendizado.
+Each encounter brings **playful dialogues** that translate concepts into easy comparisons and **thematic mini-games** that reinforce learning in a fun way.
 
-![Mini-game exemplo](https://assets.spaceappschallenge.org/media/images/Captura_de_tela_2025-10-05_230138.width-500.png)
+![Mini-game example](https://assets.spaceappschallenge.org/media/images/Captura_de_tela_2025-10-05_230138.width-500.png)
 
-### Diferenciais
+### Unique Features
 
-- **Personificação dos eventos solares:** dá personalidade aos fenômenos e cria vínculo emocional com ideias científicas.  
-- **Aprendizagem ativa:** a criança participa da narrativa e resolve desafios, estimulando pensamento crítico e curiosidade.  
-- **Dualidade do clima espacial:** apresenta tanto os riscos (radiação, interferências) quanto a beleza (auroras).
+- **Personification of solar events:** gives phenomena memorable personalities and creates an emotional bond with scientific ideas.  
+- **Active learning:** kids participate in the story and solve challenges, fostering critical thinking and curiosity.  
+- **Dual nature of space weather:** shows both risks (radiation, interference) and beauty (auroras).
 
-![Cenas do jogo](https://assets.spaceappschallenge.org/media/images/Captura_de_tela_2025-10-05_171038.width-1024.png)
+![Game scenes](https://assets.spaceappschallenge.org/media/images/Captura_de_tela_2025-10-05_171038.width-1024.png)
 
-### Potencial Educacional
+### Educational Potential
 
-Pode ser integrado à sala de aula ou a espaços informais de aprendizagem como ferramenta de **letramento em clima espacial**, incentivando o interesse por astronomia, física e consciência ambiental.
+The game can be integrated into classrooms or informal learning environments as a **space weather literacy** tool, encouraging interest in astronomy, physics, and environmental awareness.
 
-### Expansão (Roadmap)
+### Expansion (Roadmap)
 
-A versão atual é um **piloto com três fases**, demonstrando o potencial e a escalabilidade. Fases futuras podem abordar:
+The current release is a **pilot with three stages**, showcasing potential and scalability. Future stages may include:
 
-- Operador de rede elétrica mitigando **GICs** durante **GMDs** para proteger transformadores.  
-- Engenheira de tráfego espacial manobrando satélites para compensar **arrasto atmosférico** elevado por **CMEs** e aumento de **densidade neutra**.  
-- Agricultor estabilizando **GNSS** para plantio preciso durante **cintilação ionosférica** em tempestade geomagnética.
+- Grid operator mitigating **GICs** during **GMDs** to protect transformers.  
+- Space traffic engineer maneuvering satellites to compensate for increased **atmospheric drag** driven by **CMEs** and **neutral density** expansion.  
+- Farmer stabilizing **GNSS** for precise planting despite **ionospheric scintillation** during a geomagnetic storm.
 
-Esses cenários reforçam a variedade de impactos reais do clima espacial.
-
----
-
-## Tecnologias e Ferramentas
-
-- **Motor de jogo:** Godot **4.5**  
-- **Linguagem:** GDScript  
-- **Narrativa interativa:** Plugin **Dialogic**  
-- **Arte e cenários:** Krita e assets de pixel art (ver referências)  
-- **Colaboração:** Discord  
-- **Controle de versão:** Git/GitHub
+These scenarios highlight the diverse real-world impacts of space weather.
 
 ---
 
-## Uso de Inteligência Artificial (IA)
+## Technologies and Tools
 
-Utilizamos **ChatGPT (versão 5.0)** principalmente para:
-- Tradução e refinamento de textos.
-- Ideação para o roteiro.
-- Suporte na solução de problemas técnicos e sugestões de melhorias de código.
+- **Game engine:** Godot **4.5**  
+- **Language:** GDScript  
+- **Interactive storytelling:** **Dialogic** plugin  
+- **Art & environments:** Krita and pixel-art assets (see references)  
+- **Collaboration:** Discord  
+- **Version control:** Git/GitHub
 
 ---
 
-## Conteúdo Educacional (NASA Data)
+## Use of Artificial Intelligence (AI)
+
+We used **ChatGPT (version 5.0)** primarily to:
+- Translate and refine text.  
+- Brainstorm script ideas.  
+- Troubleshoot technical issues and suggest code improvements.
+
+---
+
+## Educational Content (NASA Data)
 
 - [Solar Storms and Flares](https://science.nasa.gov/sun/solar-storms-and-flares/)  
 - [NASA Space Weather Website](https://science.nasa.gov/heliophysics/focus-areas/space-weather/)  
@@ -91,7 +91,7 @@ Utilizamos **ChatGPT (versão 5.0)** principalmente para:
 
 ---
 
-## Parceiros e Outros Recursos
+## Partners and Other Resources
 
 - [Krita](https://krita.org/pt-br/features/)  
 - [Godot](https://godotengine.org/pt-br/)  
@@ -104,6 +104,6 @@ Utilizamos **ChatGPT (versão 5.0)** principalmente para:
 
 ---
 
-## Agradecimentos
+## Acknowledgments
 
-Aos organizadores do **NASA Space Apps**, às fontes de dados da **NASA** e à comunidade open-source de ferramentas e assets que tornaram este projeto possível.
+Thanks to **NASA Space Apps** organizers, **NASA** data sources, and the open-source community of tools and assets that made this project possible.
