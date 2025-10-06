@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://5rb83ji7s3nj"]
+
+[ext_resource type="Script" uid="uid://wf41v32rhbb5" path="res://CenaIntermediaria/cena_leva_cutscene_02.gd" id="1_k30xc"]
+
+[node name="CenaLevaCutscene02" type="Node2D"]
+script = ExtResource("1_k30xc")

@@ -1,5 +1,5 @@
 [background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0"]
-join andy left
+join andy left [mirrored="true"]
 join piloto leftmost
 join solarf right
 controlT: "Flight 347, communication re-established.”

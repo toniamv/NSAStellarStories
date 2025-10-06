@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://16h5dtx2e6nt"]
+
+[ext_resource type="Texture2D" uid="uid://ehtu7mo4vr02" path="res://TelasGameOverWon/GameWon.png" id="1_5ifx4"]
+[ext_resource type="Script" uid="uid://bfcu4oj2a4i3m" path="res://TelasGameOverWon/buttonWon.gd" id="2_d13a4"]
+
+[node name="GameWonScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+stretch_shrink = 4
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(320, 180)
+render_target_update_mode = 4
+
+[node name="GameWon" type="Sprite2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+position = Vector2(161, 90.25)
+texture = ExtResource("1_5ifx4")
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 491.99994
+offset_top = 493.99994
+offset_right = 635.99994
+offset_bottom = 524.99994
+scale = Vector2(1.8109751, 1.8109751)
+text = "Quit"
+script = ExtResource("2_d13a4")

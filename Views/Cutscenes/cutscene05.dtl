@@ -1,4 +1,4 @@
-[background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0"]
+[background arg="res://Views/Cutscenes/WallpaperLab.png" fade="0.0"]
 join andy left [mirrored="true"]
 join doctor right [mirrored="true"]
 andy: Whew! Mission accomplished, Doctor! Captain Bob landed safely!
@@ -12,6 +12,6 @@ andy: Light shows?
 andy: So you’re saying… the next mission is to see the pretty side of space weather?
 \doctor: Exactly! A photographer in Iceland is trying to capture the perfect shot of these lights. And you, dear Luma, will be his cosmic assistant!
 andy: Whoa! From airplane turbulence… to actual frozen tundra!
-\doctor:  Grab your warmest coat — and get ready for your next adventure! Good luck, Luma! And remember\: even in the most intense explosions, the universe hides beauty.
+\doctor: Grab your warmest coat — and get ready for your next adventure! Good luck, Luma! And remember\: even in the most intense explosions, the universe hides beauty.
 andy: You got it, Doctor! Time to discover the Sun’s charming side!
 [end_timeline]

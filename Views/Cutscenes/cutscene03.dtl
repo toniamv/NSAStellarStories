@@ -13,7 +13,7 @@ andy: Yikes… so space weather is behind this?
 piloto: Exactly. Those solar flares from the Sun are sneaky! They unleash so much energy that they interfere with radio signals here on Earth — especially high-frequency ones.
 andy: So you’re also a victim of the Sun’s mood swings!
 piloto: That’s right, Luma. The Sun may be millions of miles away, but it still finds a way to mess with my flight schedule.
-update piloto leftmost
+update piloto left [mirrored="false"]
 join solarf right
 solarf: Ha-ha! Surprise, Earthlings! Did you feel my arrival?
 andy: Aaaah! Who are you?!
@@ -33,11 +33,11 @@ andy: And I promise to help balance things out! Dr. Brall, is there a way to hel
 leave solarf
 leave piloto
 leave andy
-[background arg="res://Views/Cutscenes/aviaogame.jpeg" fade="0.0" transition="Simple Fade"]
+[background arg="res://Views/Cutscenes/TelaPlane.png" fade="0.0" transition="Simple Fade"]
 [wait time="1.0"]
 \doctor: (voice through communicator)\
 Look at the map\: the red areas are where communication is down! You can’t fly through those zones. Luma, activate the manual controls. We need to reroute the aircraft immediately! That’s the only way to re-establish contact with air traffic control!
 [background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0" transition="Simple Fade"]
-join andy center
+join andy center [mirrored="true"]
 andy: Got it! Diverting course to escape the Radio Blackout! Captain Bob, hold tight. We’re bringing the signal back and making sure this flight lands safely!
 [end_timeline]

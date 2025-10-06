@@ -1,4 +1,4 @@
-[background arg="res://Views/Cutscenes/fundoaviao.png" fade="0.0"]
+[background arg="res://Views/Cutscenes/WallpaperLab.png" fade="0.0"]
 join doctor right [animation="Slide From Right" mirrored="true"]
 join andy left [animation="Slide From Left" mirrored="true"]
 \doctor: Finally! My favorite assistant has arrived!

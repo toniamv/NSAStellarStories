@@ -1,4 +1,4 @@
-[background arg="res://AuroraScene/Assets/Aurora_cenario.png" fade="0.0"]
+[background arg="res://Views/Cutscenes/quarto.png" fade="0.0"]
 join phone center [animation="Slide In Down"]
 [wait time="1.0"]
 audio "res://Views/Cutscenes/Sounds/telephone.mp3" [volume="-1.0"]
@@ -10,13 +10,13 @@ Luma picks up the phone groggily
 join andy left [mirrored="true"]
 andy: Hello?... Dr. Brall? What is it? It’s FOUR in the morning!!
 [wait time="1.0"]
-join doctor right [mirrored="true"]
+join phone right
 \doctor: Ah, thank the cosmos, you answered! Listen, I need your help right now! I’m at the lab and something *very* serious is happening here…
 andy: What happened, Professor? Are you okay?
 \doctor: No time to explain everything over the phone… but mysterious portals showed up, and each one is connected to a different space weather phenomenon that’s affecting places all over the world! A solar storm, a magnetic disturbance… if we don’t act fast, things could get worse!
 andy: Space weather? What am I supposed to do about that??
 \doctor: You’re smart and you’ve got the heart of a scientist! I know you can help me. I need you to come to the lab right now. I’ll show you how to use the portals to travel to those locations, help the people, and learn how the Sun affects Earth. Every second counts!
 andy: Fiiine! I’m coming!
-leave doctor
+leave phone
 leave andy
 [end_timeline]

@@ -16,13 +16,14 @@ func _on_timer_timeout():
 	
 	if count >= 30:
 		print("⏰ Tempo esgotado!")
-		get_tree().quit()
+		print("🎉 Vitória!")
+		get_tree().change_scene_to_file("res://CenaIntermediaria/CenaLevaCutscene04.tscn")
 	
 	time_label.text = "Tempo: %d" % max(time - count, 0)
 	if(count%2 == 0):
 		var obs := Obstacle.instantiate()
-		get_tree().current_scene.call_deferred("add_child", obs)
+		call_deferred("add_child", obs)
 
 func register_hit():
 	print("PERDEU")
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://TelasGameOverWon/TelaGameOver.tscn")

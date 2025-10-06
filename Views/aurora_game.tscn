@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6jckadmvd1ka"]
+[gd_scene load_steps=2 format=3 uid="uid://dmetttbeq53hg"]
 
 [ext_resource type="PackedScene" uid="uid://gnae0rjsvhi7" path="res://AuroraScene/aurora_principal.tscn" id="1_32shm"]
 

@@ -40,9 +40,9 @@ func register_hit() -> void:
 
 func victory() -> void:
 	print("🎉 Vitória!")
-	get_tree().change_scene_to_file("res://Fase_Aviao/plane_principal.tscn")
+	get_tree().change_scene_to_file("res://CenaIntermediaria/CenaLevaCutscene07.tscn")
 	# trocar de cena / mostrar painel aqui
 
 func game_over() -> void:
-	print("⏰ Tempo esgotado!")
+	get_tree().change_scene_to_file("res://TelasGameOverWon/TelaGameOver.tscn")
 	# lógica de derrota aqui

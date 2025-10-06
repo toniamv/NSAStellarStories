@@ -12,11 +12,12 @@ b = Vector2(0, 180)
 b = Vector2(322, 0)
 
 [node name="PlanePrincipal" type="Node2D"]
+position = Vector2(1, 0)
 script = ExtResource("1_ixj22")
 
 [node name="Aeronave" parent="." instance=ExtResource("1_wu0ap")]
 texture_filter = 1
-position = Vector2(127, 86)
+position = Vector2(138, 80)
 
 [node name="LimiteEsq" type="Node2D" parent="." groups=["paredes"]]
 
