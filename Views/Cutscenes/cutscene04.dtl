@@ -1,6 +1,6 @@
 [background arg="res://Views/Cutscenes/bgaviao.png" fade="0.0"]
-join andy left [mirrored="true"]
 join piloto leftmost
+join andy left [mirrored="true"]
 join solarf right
 controlT: "Flight 347, communication re-established.”
 piloto: Communication restored! Thank you so much, Luma. Without you, I wouldn’t have landed safely!
