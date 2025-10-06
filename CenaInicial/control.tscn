@@ -1,12 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://c4u7qshf8cs0i"]
+[gd_scene load_steps=10 format=3 uid="uid://c4u7qshf8cs0i"]
 
 [ext_resource type="Script" uid="uid://bl0fmsdunyvx5" path="res://CenaInicial/tela_inicial.gd" id="1_pas6f"]
 [ext_resource type="Texture2D" uid="uid://cjqxj4160v12a" path="res://CenaInicial/Sprites/BInicial1.png" id="1_rrq1q"]
 [ext_resource type="Texture2D" uid="uid://cg6re7vk32e4n" path="res://CenaInicial/Sprites/BInicial2.png" id="2_n3tlm"]
 [ext_resource type="Script" uid="uid://dsisgp8ti51vc" path="res://CenaInicial/button.gd" id="3_n3tlm"]
 [ext_resource type="Script" uid="uid://0v0brpgh5gri" path="res://CenaInicial/button_2.gd" id="5_y6bwd"]
-[ext_resource type="Texture2D" uid="uid://mj853bx0r1j5" path="res://CenaInicial/Sprites/tituloJogo.png" id="6_se34o"]
-[ext_resource type="Texture2D" uid="uid://bx7f6yc5wdwji" path="res://CenaInicial/Sprites/tituloJogoWhite.png" id="7_uljxq"]
+[ext_resource type="Texture2D" uid="uid://cygmxp82dywch" path="res://CenaInicial/Sprites/tituloFinal.png" id="6_bef7e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pas6f"]
 atlas = ExtResource("1_rrq1q")
@@ -93,12 +92,7 @@ size_flags_vertical = 4
 text = "Quit"
 script = ExtResource("5_y6bwd")
 
-[node name="TituloJogo" type="Sprite2D" parent="TelaInicial"]
-position = Vector2(610, 373)
-scale = Vector2(3.4782567, 3.4782567)
-texture = ExtResource("6_se34o")
-
-[node name="TituloJogoWhite" type="Sprite2D" parent="TelaInicial"]
-position = Vector2(611.00006, 362)
-scale = Vector2(3.4001544, 3.4001544)
-texture = ExtResource("7_uljxq")
+[node name="TituloFinal" type="Sprite2D" parent="TelaInicial"]
+position = Vector2(670.00006, 253.00002)
+scale = Vector2(3.245604, 3.245604)
+texture = ExtResource("6_bef7e")
